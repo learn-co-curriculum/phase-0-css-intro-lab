@@ -1,0 +1,61 @@
+/*
+Tag selector to select the 'body' element
+*/
+body {
+  /*
+  Set the background of the 'body' element to '#00b3e6' (light blue)
+  */
+  
+  /* background:#00b3e6; */
+}
+
+/*
+Tag selector to select the 'article' element
+*/
+article {
+  /*
+  Sets the article element width to 700px
+  */
+  /* width:700px; */
+
+  /*
+  Centers the article element
+  */
+  /* margin:auto; */
+  
+  /*
+  Sets the font family of the article element to 'Helvetica Neue'
+  alternative fonts are provided in the event 'Helvetica Neue' is not available on the user's device
+  */
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  
+  /*
+  Set the background of the 'article' element to 'white'
+  */
+  /* background:white; */
+
+  /*
+  Add 30px of white space to perimeter of the 'article elment'
+  */
+  /* padding:30px; */
+}
+
+/*
+ID selector to select the element with id 'main-header'
+*/
+#main-header {
+  /*
+  Set the font-size to 22px for the element with id 'main-header'
+  */
+  /* font-size:22px; */
+}
+
+/*
+Class selector to select elements containing the class 'perspective-questions'
+*/
+.perspective-questions {
+  /*
+  Set the 'font-style' to 'italic' for elements containing the class 'perspective-questions'
+  */
+  /* font-style: italic; */
+}
