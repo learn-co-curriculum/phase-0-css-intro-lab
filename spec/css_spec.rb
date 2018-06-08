@@ -22,7 +22,7 @@ RSpec.describe 'styling' do
 
     it 'sets x y property to z' do
       selector = parsed_css.find_by_selector('body')[0]
-      expect(selector).to include("background: #00b3e6;"), "Missing properly formatted background declaration"
+      expect(selector).to include("background: #00b3e6"), "Missing properly formatted background declaration"
     end
     
     it 'sets x y property to z' do
@@ -41,7 +41,7 @@ RSpec.describe 'styling' do
 
     it 'sets x y property to z' do
       selector = parsed_css.find_by_selector('.perspective-questions')[0]
-      expect(selector).to include("font-style: italic;"), "Missing properly formatted font-style declaration"
+      expect(selector).to include("font-style: italic"), "Missing properly formatted font-style declaration"
     end
   
   end
