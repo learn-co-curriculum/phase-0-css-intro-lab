@@ -22,26 +22,26 @@ RSpec.describe 'styling' do
 
     it 'sets x y property to z' do
       selector = parsed_css.find_by_selector('body')[0]
-      expect(selector).to include("background: #00b3e6;")
+      expect(selector).to include("background: #00b3e6;"), "Missing properly formatted background declaration"
     end
     
     it 'sets x y property to z' do
       selector = parsed_css.find_by_selector('div')[0]
-      expect(selector).to include("width: 700px;")
-      expect(selector).to include("margin: auto;")
-      expect(selector).to include('font-family: "Helvetica Neue";')
-      expect(selector).to include('background: white;')
-      expect(selector).to include('padding: 30px;')
+      expect(selector).to include("width: 700px;"), "Missing properly formatted width declaration"
+      expect(selector).to include("margin: auto;"), "Missing properly formatted margin declaration"
+      expect(selector).to include('font-family: "Helvetica Neue";'), "Missing properly formatted font-family declaration"
+      expect(selector).to include('background: white;'), "Missing properly formatted background declaration"
+      expect(selector).to include('padding: 30px;'), "Missing properly formatted padding declaration"
     end
     # 
     it 'sets x y property to z' do
       selector = parsed_css.find_by_selector('#main-header')[0]
-      expect(selector).to include("font-size: 22px;")
+      expect(selector).to include("font-size: 22px;"), "Missing properly formatted font-size declaration"
     end
 
     it 'sets x y property to z' do
       selector = parsed_css.find_by_selector('.perspective-questions')[0]
-      expect(selector).to include("font-style: italic;")
+      expect(selector).to include("font-style: italic;"), "Missing properly formatted font-style declaration"
     end
   
   end
