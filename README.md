@@ -5,7 +5,7 @@
 
 HTML's role in our websites is to provide structure, content, and link
 resources. Understanding that, its role in describing the style of content is
-minimal. By default, HTML follows a few default rules, and provides minimal
+minimal. HTML follows a few default rules, and provides minimal
 customization itself through the use of different tags and built in attributes. 
 
 In order to further customize the style, appearance, and interactive behavior of
@@ -19,7 +19,7 @@ work on implementing CSS declarations in our HTML.
 2. Implement CSS declarations
 
 
-## Import our CSS
+## Import a CSS File in Our HTML
 
 First things first: we need to make sure our HTML is loading our stylesheet.
 This is done with a `<style>` tag, which tells HTML "Hey, I want to define some
@@ -27,19 +27,19 @@ CSS styling here. I am either going to link a file with this `<style>` tag or
 write styling directly inside of it!"
 
 In our case, we want to provide a link to our stylesheet, instead of writing all
-of our CSS code directly in the tag (it makes for cleaner code, after all).  
+of our CSS code directly in the tag. This allows us to only have to write styles for the entire site once, instead of repeating every style on every page.
 
 In `index.html`, provide a `<style>` tag which correctly sources the CSS file
 located in this directory. The `<style>` tag will link to our file with an
 `href` attribute, like so:
 
 ```HTML
-<link rel="stylesheet" href="<relative path to CSS file>">
+<link rel="stylesheet" href="relative path to CSS file">
 ```
 
 Links to stylesheets should go at the end of the `<head>` section! Make sure you
 provide a _relative_ path to the stylesheet.
-
+Hint: Open `index.html` in the browser. You can test whether your link is working or not by the color of your headline. If it's red, it's working! If it's black, keep going - you'll get it.
 
 ## Implement CSS Declarations
 
@@ -49,7 +49,7 @@ document! First, open `index.html` in the browser to get a good idea of what
 
 What we would really like is [something a little more jazzed up][styled]! Let's
 work towards that. Set the following _properties_ to specific _values_. Make
-sure to, after each update, look at your HTML in the browser to see how it has
+sure to, after each update, look at `index.html` in the browser to see how it has
 changed:
 
 - Set the `background` of the `<body>` element (whole document) to `#00b3e6` (light blue)
@@ -78,6 +78,6 @@ expect on websites.
 - [W3 Introduction to CSS](https://www.w3schools.com/Css/css_intro.asp)
 
 [unstyled]: https://curriculum-content.s3.amazonaws.com/web-development/unstyled-codepen.jpeg
-[styled]: https://curriculum-content.s3.amazonaws.com/web-development/styled-codepen.jpeg
+[styled]: https://curriculum-content.s3.amazonaws.com/web-development/styled-intro-to-css.png
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/introduction-to-css-lab'>Introduction to CSS Lab</a> on Learn.co and start learning to code for free.</p>
