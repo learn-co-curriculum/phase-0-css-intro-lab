@@ -48,7 +48,9 @@ document! First, open `index.html` in the browser to get a good idea of what
 [our un-styled page][unstyled] page looks like. 
 
 What we would really like is [something a little more jazzed up][styled]! Let's
-work towards that. Set the following _properties_ to specific _values_. Make sure to, after each update, look at your HTML in the browser to see how it has changed:
+work towards that. Set the following _properties_ to specific _values_. Make
+sure to, after each update, look at your HTML in the browser to see how it has
+changed:
 
 - Set the `background` of the `<body>` element (whole document) to `#00b3e6` (light blue)
 - Set the `<div>` elements: 
@@ -66,7 +68,10 @@ tests.
 
 ## Conclusion
 
-CSS allows us to easily separate our 'styling' logic into separate files that follow the 'cascading' ruleset. This enables us to keep our HTML clean and simple to read, without sacrificing the customization that we have come to expect on websites. 
+CSS allows us to easily separate our 'styling' logic into separate files that
+follow the 'cascading' ruleset. This enables us to keep our HTML clean and
+simple to read, without sacrificing the customization that we have come to
+expect on websites. 
 
 
 ## Resources 
