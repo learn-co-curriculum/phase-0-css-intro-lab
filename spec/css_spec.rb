@@ -1,32 +1,52 @@
+require "pry"
 
-
-RSpec.describe 'index.html' do
-  it 'contains an <iframe> tag' do
-    iframe = parsed_html.search('iframe')[0]
-    expect(iframe).to_not be_nil, "No <iframe> tag was found"
-    expect(iframe.attributes["src"]).to match(/https:/), "Include a valid URL in the src attribute"
+RSpec.describe 'styling' do
+  
+  context 'within index.html' do
+    
+    it 'contains a <link> tag' do
+      link = parsed_html.search('link')[0]
+      expect(link).to_not be_nil, "No <link> tag was found"
+    end
+    
+    it 'correctly links to the style.css file with a relative path' do
+      link = parsed_html.search('link')[0]
+      expect(link).to_not be_nil, "No <link> tag was found"
+      expect(link.attributes["href"]).to match(/\.\/style\.css/), "Make sure you provide a relative path to style.css from index.html"
+    end
+    
   end
+  
+  
+  context 'within style.css' do
 
-  context 'within <iframe>' do
-    it 'contains a "width" attribute set to "100%" ' do
-      iframe = parsed_html.search('iframe')[0]
-      expect(iframe.attributes["width"]).to_not be_nil, "No width attribute was found in the iframe"
-      expect(iframe.attributes["width"].value).to eq("100%"), "The width attribute should be set to '100%'"
+    it 'sets x y property to z' do
+      selector = parsed_css.find_by_selector('body')[0]
+      expect(selector).to include("background: #00b3e6;")
+    end
+    
+    it 'sets x y property to z' do
+      selector = parsed_css.find_by_selector('div')[0]
+      expect(selector).to include("width: 700px;")
+      expect(selector).to include("margin: auto;")
+      expect(selector).to include('font-family: "Helvetica Neue";')
+      expect(selector).to include('background: white;')
+      expect(selector).to include('padding: 30px;')
+    end
+    # 
+    it 'sets x y property to z' do
+      selector = parsed_css.find_by_selector('#main-header')[0]
+      expect(selector).to include("font-size: 22px;")
     end
 
-    it 'contains a "height" attribute set to "400px" ' do
-      iframe = parsed_html.search('iframe')[0]
-      expect(iframe.attributes["height"]).to_not be_nil, "No height attribute was found in the iframe"
-      expect(iframe.attributes["height"].value).to eq("400px"), "The height attribute should be set to '400px'"
+    it 'sets x y property to z' do
+      selector = parsed_css.find_by_selector('.perspective-questions')[0]
+      expect(selector).to include("font-style: italic;")
     end
-
-    it 'contains a "frameborder" attribute set to "1" ' do
-      iframe = parsed_html.search('iframe')[0]
-      expect(iframe.attributes["frameborder"]).to_not be_nil, "No frameborder attribute was found in the iframe"
-      expect(iframe.attributes["frameborder"].value).to eq("1"), "The frameborder attribute should be set to '1'"
-    end
-
+  
   end
+  
+
 
 
 end
