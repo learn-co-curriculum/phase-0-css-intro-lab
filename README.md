@@ -25,12 +25,25 @@ This is done with a `<style>` tag, which tells HTML "Hey, I want to define some
 CSS styling here. I am either going to link a file with this `<style>` tag or
 write styling directly inside of it!"
 
-In our case, we want to provide a link to our stylesheet, instead of writing all
-of our CSS code directly in the tag. This allows us to only have to write styles for the entire site once, instead of repeating every style on every page.
+In our case, we want to provide a link to our stylesheet, instead of writing
+all of our CSS code directly in the tag. This allows us to only have to write
+styles for the entire site once, instead of repeating every style on every
+page.
 
-In `index.html`, provide a `<style>` tag which correctly sources the CSS file
-located in this directory. The `<style>` tag will link to our file with an
-`href` attribute, like so:
+In `index.html`, provide a `<style>` tag. The `href` attribute should point to
+the file `style.css` which is located in this directory using a _relative
+path_. The `rel` attribute is used to note that the file which is being linked
+has a **rel**ation of being a "stylesheet."
+
+Now, what is a relative path? You could write `href="style.css"` and the
+content of `style.css` would change your `index.html` file. But we want to
+teach you to require external resources (like CSS or JavaScript) by using
+_relative paths_. Relative paths make it _crystal clear_ which file is being
+used. Relative paths start with `./` which means "from the directory I am
+currently in." So, when we use `link` to associate with a stylesheet and we
+write `href="./style.css"` we're saying: "From the directory in which I, the
+`index.html` file live, look for a file called `style.css` and use it. This
+pattern will help you and other developers remove any possible confusion.
 
 ```HTML
 <link rel="stylesheet" href="relative path to CSS file">
