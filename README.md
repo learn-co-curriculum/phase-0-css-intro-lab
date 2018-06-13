@@ -6,11 +6,11 @@
 HTML's role in our websites is to provide structure, content, and link
 resources. Understanding that, its role in describing the style of content is
 minimal. HTML follows a few default rules, and provides minimal
-customization itself through the use of different tags and built in attributes. 
+customization itself through the use of different tags and built in attributes.
 
 In order to further customize the style, appearance, and interactive behavior of
 our websites, we turn to Cascading Style Sheets, or CSS. In this lab, we will
-work on implementing CSS declarations in our HTML. 
+work on implementing CSS declarations in our HTML.
 
 
 ## Objectives
@@ -45,7 +45,7 @@ Hint: Open `index.html` in the browser. You can test whether your link is workin
 
 Now, we are going to create some CSS declarations and add styling to our
 document! First, open `index.html` in the browser to get a good idea of what
-[our un-styled page][unstyled] page looks like. 
+[our un-styled page][unstyled] page looks like.
 
 What we would really like is [something a little more jazzed up][styled]! Let's
 work towards that. Set the following _properties_ to specific _values_. Make
@@ -53,7 +53,7 @@ sure to, after each update, look at `index.html` in the browser to see how it ha
 changed:
 
 - Set the `background` of the `<body>` element (whole document) to `#00b3e6` (light blue)
-- Set the `<div>` elements: 
+- Set the `<div>` elements:
   - `width` to `700px`
   - `margin` to `auto` (centers our element)
   - `font-family` to `"Helvetica Neue"`
@@ -71,10 +71,10 @@ tests.
 CSS allows us to easily separate our 'styling' logic into separate files that
 follow the 'cascading' ruleset. This enables us to keep our HTML clean and
 simple to read, without sacrificing the customization that we have come to
-expect on websites. 
+expect on websites.
 
 
-## Resources 
+## Resources
 - [W3 Introduction to CSS](https://www.w3schools.com/Css/css_intro.asp)
 
 [unstyled]: https://curriculum-content.s3.amazonaws.com/web-development/unstyled-codepen.jpeg
