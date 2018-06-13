@@ -4,14 +4,13 @@
 ## Problem Statement
 
 HTML's role in our websites is to provide structure, content, and link
-resources. Understanding that, its role in describing the style of content is
-minimal. HTML follows a few default rules, and provides minimal
-customization itself through the use of different tags and built in attributes.
+resources (e.g. CSS files). Its role in describing the style ("presentation")
+of content is minimal. HTML's ability to style is pretty much limited to
+"pretty good" defaults.
 
-In order to further customize the style, appearance, and interactive behavior of
-our websites, we turn to Cascading Style Sheets, or CSS. In this lab, we will
-work on implementing CSS declarations in our HTML.
-
+In order to further customize the style, appearance, and interactive behavior
+of our websites, we turn to Cascading Style Sheets, or CSS. In this lab, we
+will work on implementing CSS declarations in our HTML.
 
 ## Objectives
 
