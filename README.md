@@ -21,19 +21,33 @@ will work on implementing CSS declarations in our HTML.
 ## Import a CSS File in Our HTML
 
 First things first: we need to make sure our HTML is loading our stylesheet.
-This is done with a `<style>` tag, which tells HTML "Hey, I want to define some
-CSS styling here. I am either going to link a file with this `<style>` tag or
-write styling directly inside of it!"
+
+We have two options:
+
+1. Write CSS rules inside of a `<style>` tag ("internal CSS"), which tells HTML
+   "Hey, I want to define some CSS styling here
+2. Write CSS rules in an external file that is specified with the `<link>` tag
+   ("external CSS").
 
 In our case, we want to provide a link to our stylesheet, instead of writing
-all of our CSS code directly in the tag. This allows us to only have to write
-styles for the entire site once, instead of repeating every style on every
-page.
+all of our CSS code directly in the  `<style>` tag. This allows us to only have
+to write styles for the entire site once, instead of repeating every `<style>`
+element on every page.  A common workflow is to see developers work on CSS
+inside of the `<style>` tag until their styling is done. At that point they
+move it to their external file and remove the `<style>` element from the HTML
+page. Feel free to try it out!
 
-In `index.html`, provide a `<style>` tag. The `href` attribute should point to
-the file `style.css` which is located in this directory using a _relative
-path_. The `rel` attribute is used to note that the file which is being linked
-has a **rel**ation of being a "stylesheet."
+In `index.html`, provide a `<link>` tag which correctly sources the CSS file
+located in this directory. The `<link>` tag will link to our file with an
+`href` attribute, like so:
+
+```HTML
+<link rel="stylesheet" href="relative path to CSS file">
+```
+
+The `href` attribute should point to the file `style.css` which is located in
+this directory using a _relative path_. The `rel` attribute is used to note
+that the file which is being linked has a **rel**ation of being a "stylesheet."
 
 Now, what is a relative path? You could write `href="style.css"` and the
 content of `style.css` would change your `index.html` file. But we want to
