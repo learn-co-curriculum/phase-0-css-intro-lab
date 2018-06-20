@@ -21,7 +21,7 @@ RSpec.describe 'styling' do
   context 'within style.css' do
     it 'sets body background to #00b3e6' do
       selector = parsed_css.find_by_selector('body')[0]
-      expect(selector).to include("background: #00b3e6"), "Missing properly formatted background declaration"
+      expect(selector).to (include("background: #00b3e6").or include("background-color: #00b3e6")), "Missing properly formatted background declaration"
     end
     it 'sets div width to 700px' do
       selector = parsed_css.find_by_selector('div')[0]
