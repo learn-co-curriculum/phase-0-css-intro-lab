@@ -1,7 +1,11 @@
 # Introduction to CSS Lab
 
+## Learning Goals
 
-## Problem Statement
+- Import a CSS file in our HTML
+- Implement CSS declarations
+
+## Introduction
 
 HTML's role in our websites is to provide structure, content, and link
 resources (e.g. CSS files). Its role in describing the style ("presentation")
@@ -11,12 +15,6 @@ of content is minimal. HTML's ability to style is pretty much limited to
 In order to further customize the style, appearance, and interactive behavior
 of our websites, we turn to Cascading Style Sheets, or CSS. In this lab, we
 will work on implementing CSS declarations in our HTML.
-
-## Objectives
-
-1. Import a CSS file in our HTML
-2. Implement CSS declarations
-
 
 ## Import a CSS File in Our HTML
 
@@ -105,5 +103,3 @@ expect on websites.
 
 [unstyled]: https://curriculum-content.s3.amazonaws.com/web-development/unstyled-codepen.jpeg
 [styled]: https://curriculum-content.s3.amazonaws.com/web-development/styled-intro-to-css.png
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/introduction-to-css-lab'>Introduction to CSS Lab</a> on Learn.co and start learning to code for free.</p>
