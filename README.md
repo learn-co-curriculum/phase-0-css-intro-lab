@@ -61,8 +61,8 @@ pattern will help you and other developers remove any possible confusion.
 <link rel="stylesheet" href="relative path to CSS file">
 ```
 
-Links to stylesheets should go at the end of the `<head>` section! Make sure you
-provide a _relative_ path to the stylesheet.
+Links to style sheets should go at the end of the `<head>` section! Make sure you
+provide a _relative_ path to the style sheet.
 Hint: Open `index.html` in the browser. You can test whether your link is working or not by the color of your headline. If it's red, it's working! If it's black, keep going - you'll get it.
 
 ## Implement CSS Declarations
