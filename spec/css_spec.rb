@@ -1,7 +1,17 @@
-require "pry"
+require 'w3c_validators'
+include W3CValidators
 
 RSpec.describe 'styling' do
-  
+  context 'syntax' do
+    it 'is valid CSS' do
+      validator = CSSValidator.new
+
+      results = validator.validate_text(File.read('./style.css'))
+      expect(results.validity).to be(true), results.errors.map { |err| "Error on line #{err.line}" }.join(', ')
+      
+    end 
+  end
+
   context 'within index.html' do
     
     it 'contains a <link> tag' do
