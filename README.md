@@ -16,6 +16,8 @@ In order to further customize the style, appearance, and interactive behavior
 of our websites, we turn to Cascading Style Sheets, or CSS. In this lab, we
 will work on implementing CSS declarations in our HTML.
 
+![HTML vs CSS Table](https://curriculum-content.s3.amazonaws.com/css-essentials/introduction-to-css-lab/Image_66_WritingCSS%20vs%20HTML.png)
+
 ## Import a CSS File in Our HTML
 
 First things first: we need to make sure our HTML is loading our style sheet.
