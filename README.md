@@ -88,7 +88,7 @@ changed:
 - Set the element with the id of `#main-header` to a `font-size` of `22px`
 - Set the elements with the class of `.perspective-questions` to a `font-style` of `italic`
 
-Run `learn` to test your work and `learn submit` once you've passed all the
+Run `learn test` to test your work and `learn submit` once you've passed all the
 tests.
 
 
