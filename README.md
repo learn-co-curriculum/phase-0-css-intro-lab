@@ -1,6 +1,7 @@
 # Introduction to CSS Lab
 
-## Learning Goals
+## 
+ing Goals
 
 - Import a CSS file in our HTML
 - Implement CSS declarations
@@ -17,6 +18,12 @@ of our websites, we turn to Cascading Style Sheets, or CSS. In this lab, we
 will work on implementing CSS declarations in our HTML.
 
 ![HTML vs CSS Table](https://curriculum-content.s3.amazonaws.com/css-essentials/introduction-to-css-lab/Image_66_WritingCSS%20vs%20HTML.png)
+
+## Getting Started
+
+Fork and clone this lesson into your local environment. Navigate into its directory
+in the terminal, then run `code .` to open the files in Visual Studio Code. Finally,
+run `bundle` to install the lab's dependencies.
 
 ## Import a CSS File in Our HTML
 
@@ -88,9 +95,7 @@ changed:
 - Set the element with the id of `#main-header` to a `font-size` of `22px`
 - Set the elements with the class of `.perspective-questions` to a `font-style` of `italic`
 
-Run `learn test` to test your work and `learn submit` once you've passed all the
-tests.
-
+Run `rspec` to test your work.
 
 ## Conclusion
 
