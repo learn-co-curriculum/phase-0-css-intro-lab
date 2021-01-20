@@ -1,7 +1,6 @@
 # Introduction to CSS Lab
 
-## 
-ing Goals
+## Learning Goals
 
 - Import a CSS file in our HTML
 - Implement CSS declarations
