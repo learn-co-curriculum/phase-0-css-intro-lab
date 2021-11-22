@@ -7,22 +7,22 @@
 
 ## Introduction
 
-HTML's role in our websites is to provide structure, content, and link
-resources (e.g. CSS files). Its role in describing the style ("presentation")
-of content is minimal. HTML's ability to style is pretty much limited to
-"pretty good" defaults.
+HTML's role in our websites is to provide structure, content, and link resources
+(e.g. CSS files). Its role in describing the style ("presentation") of content
+is minimal. HTML's ability to style is pretty much limited to "pretty good"
+defaults.
 
-In order to further customize the style, appearance, and interactive behavior
-of our websites, we turn to Cascading Style Sheets, or CSS. In this lab, we
-will work on implementing CSS declarations in our HTML.
+In order to further customize the style, appearance, and interactive behavior of
+our websites, we turn to Cascading Style Sheets, or CSS. In this lab, we will
+work on implementing CSS declarations in our HTML.
 
 ![HTML vs CSS Table](https://curriculum-content.s3.amazonaws.com/css-essentials/introduction-to-css-lab/Image_66_WritingCSS%20vs%20HTML.png)
 
 ## Getting Started
 
-Fork and clone this lesson into your local environment. Navigate into its directory
-in the terminal, then run `code .` to open the files in Visual Studio Code. Finally,
-run `bundle` to install the lab's dependencies.
+Fork and clone this lesson into your local environment. Navigate into its
+directory in the terminal, then run `code .` to open the files in Visual Studio
+Code. Finally, run `npm install` to install the lab's dependencies.
 
 ## Import a CSS File in Our HTML
 
@@ -31,7 +31,7 @@ First things first: we need to make sure our HTML is loading our style sheet.
 We have two options:
 
 1. Write CSS rules inside of a `<style>` tag ("internal CSS"), which tells HTML
-   "Hey, I want to define some CSS styling here
+   "Hey, I want to define some CSS styling here."
 2. Write CSS rules in an external file that is specified with the `<link>` tag
    ("external CSS").
 
@@ -85,7 +85,8 @@ work towards that. Set the following _properties_ to specific _values_. Make
 sure to, after each update, look at `index.html` in the browser to see how it
 has changed:
 
-- Set the `background` of the `<body>` element (whole document) to `#00b3e6` (light blue)
+- Set the `background` of the `<body>` element (whole document) to `#00b3e6`
+  (light blue)
 - Set the `<div>` elements:
   - `width` to `700px`
   - `margin` to `auto` (centers our element)
@@ -93,9 +94,10 @@ has changed:
   - `background` to `white`
   - `padding` to `30px` (creates an invisible space around the element)
 - Set the element with the id of `#main-header` to a `font-size` of `22px`
-- Set the elements with the class of `.perspective-questions` to a `font-style` of `italic`
+- Set the elements with the class of `.perspective-questions` to a `font-style`
+  of `italic`
 
-Run `rspec` to test your work.
+Run `npm test` to test your work.
 
 ## Saving Your Work Remotely
 
@@ -124,5 +126,7 @@ expect on websites.
 
 - [W3 Introduction to CSS](https://www.w3schools.com/Css/css_intro.asp)
 
-[un-styled]: https://curriculum-content.s3.amazonaws.com/web-development/unstyled-codepen.jpeg
-[styled]: https://curriculum-content.s3.amazonaws.com/web-development/styled-intro-to-css.png
+[un-styled]:
+  https://curriculum-content.s3.amazonaws.com/web-development/unstyled-codepen.jpeg
+[styled]:
+  https://curriculum-content.s3.amazonaws.com/web-development/styled-intro-to-css.png
