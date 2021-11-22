@@ -31,7 +31,7 @@ First things first: we need to make sure our HTML is loading our style sheet.
 We have two options:
 
 1. Write CSS rules inside of a `<style>` tag ("internal CSS"), which tells HTML
-   "Hey, I want to define some CSS styling here
+   "Hey, I want to define some CSS styling here."
 2. Write CSS rules in an external file that is specified with the `<link>` tag
    ("external CSS").
 
