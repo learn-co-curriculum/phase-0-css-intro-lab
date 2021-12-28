@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const chai = require("chai");
 const CSSOM = require("cssom");
-const cssValidator = require("css-validator");
+const { validate } = require("csstree-validator");
 chai.use(require("chai-dom"));
 const { expect } = chai;
 
@@ -11,18 +11,24 @@ const cssFile = fs.readFileSync(
   "utf-8"
 );
 
-function validateCss(css) {
-  return new Promise((resolve, reject) =>
-    cssValidator({ text: css }, (err, data) => {
-      if (err) return reject(err);
-      resolve(data);
-    })
-  );
-}
-
 function findRule(rules, cssSelector) {
   return rules.find((r) => r.selectorText === cssSelector);
 }
+
+// Custom CSS Validation Helper
+chai.use(function (chai, utils) {
+  utils.addProperty(chai.Assertion.prototype, "validCss", function () {
+    const validationErrors = validate(this._obj);
+    const errorMessages = validationErrors
+      .map((err) => `\tError on line ${err.line}: ${err.message.trim()}`)
+      .join("\n");
+    this.assert(
+      validationErrors.length === 0,
+      `Expected CSS not to have validation errors. The following validation errors were reported:\n${errorMessages}`,
+      `Expected CSS to have validation errors. The following validation errors were reported:\n${errorMessages}`
+    );
+  });
+});
 
 describe("index.html", () => {
   it("contains a <link> tag", () => {
@@ -48,13 +54,8 @@ describe("index.css", () => {
     css = CSSOM.parse(cssFile);
   });
 
-  it("contains valid CSS", async () => {
-    const validation = await validateCss(cssFile);
-    const isValidCss = validation.errors.length === 0;
-    const errorMessages = validation.errors
-      .map((err) => `Error on line ${err.line}: ${err.message.trim()}`)
-      .join("\n");
-    expect(isValidCss, errorMessages).to.be.true;
+  it("contains valid CSS", () => {
+    expect(cssFile).to.be.validCss;
   });
 
   it("has a rule for the <body> tag", () => {

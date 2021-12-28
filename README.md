@@ -22,7 +22,7 @@ work on implementing CSS declarations in our HTML.
 
 Fork and clone this lesson into your local environment. Navigate into its
 directory in the terminal, then run `code .` to open the files in Visual Studio
-Code. Finally, run `npm install` to install the lab's dependencies.
+Code.
 
 ## Import a CSS File in Our HTML
 
@@ -31,7 +31,7 @@ First things first: we need to make sure our HTML is loading our style sheet.
 We have two options:
 
 1. Write CSS rules inside of a `<style>` tag ("internal CSS"), which tells HTML
-   "Hey, I want to define some CSS styling here
+   "Hey, I want to define some CSS styling here."
 2. Write CSS rules in an external file that is specified with the `<link>` tag
    ("external CSS").
 
@@ -97,23 +97,7 @@ has changed:
 - Set the elements with the class of `.perspective-questions` to a `font-style`
   of `italic`
 
-Run `npm test` to test your work.
-
-## Saving Your Work Remotely
-
-Currently, the work you've done on this assignment is only on your local
-machine. To preserve work on your GitHub fork, you will need to stage the
-changes you've made, commit them, and push the commit up to GitHub. Use the
-following commands to do this:
-
-```console
-$ git add .
-$ git commit -m "Completed assignment"
-$ git push
-```
-
-If you visit your fork on GitHub, you should now see that _you've_ made the most
-recent commit, and your solution will be present in the files.
+Run `learn test` to test your work.
 
 ## Conclusion
 
