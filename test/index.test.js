@@ -66,7 +66,7 @@ describe("index.css", () => {
   it("sets <body> background to #00b3e6", () => {
     const rule = findRule(css.cssRules, "body");
     const hint = "Missing background property for body";
-    expect(rule.style["background"], hint).to.eq("#00b3e6");
+    expect(rule.style["background"]|| rule.style["background-color"], hint).to.eq("#00b3e6");
   });
 
   it("has a rule for <div> tags", () => {
@@ -95,7 +95,7 @@ describe("index.css", () => {
   it("sets <div> background to white", () => {
     const rule = findRule(css.cssRules, "div");
     const hint = "Missing background property for div";
-    expect(rule.style["background"], hint).to.eq("white");
+    expect(rule.style["background"]|| rule.style["background-color"], hint).to.eq("white");
   });
 
   it("sets <div> padding to 30px", () => {
