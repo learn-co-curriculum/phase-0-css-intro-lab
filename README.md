@@ -16,7 +16,15 @@ In order to further customize the style, appearance, and interactive behavior of
 our websites, we turn to Cascading Style Sheets, or CSS. In this lab, we will
 work on implementing CSS declarations in our HTML.
 
-![HTML vs CSS Table](https://curriculum-content.s3.amazonaws.com/css-essentials/introduction-to-css-lab/Image_66_WritingCSS%20vs%20HTML.png)
+## Writing HTML vs. Writing CSS
+
+|             | HTML | CSS |
+| ----------- | ---- | --- |
+| Deals with: | Content layer                                             | Presentation layer                                               |
+| Concerns:   | Structure, hierarchy & meaning                            | Aesthetic & display                                              |
+| Questions:  | - Should the order of items within a list matter?         | - Should the layout of the text be in a single or double column? |
+|             | - Should we wrap a list of links inside a navigation tag? | - Should we use a different font color for the header?           |
+|             | - Is this the most important header in the HTML document? | - How should the content appear on a desktop vs. a mobile device?  |
 
 ## Getting Started
 
