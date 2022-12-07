@@ -1,3 +1,5 @@
+require ( './helpers.js' );
+
 const fs = require("fs");
 const path = require("path");
 const chai = require("chai");
@@ -20,12 +22,15 @@ chai.use(function (chai, utils) {
   utils.addProperty(chai.Assertion.prototype, "validCss", function () {
     const validationErrors = validate(this._obj);
     const errorMessages = validationErrors
-      .map((err) => `\tError on line ${err.line}: ${err.message.trim()}`)
-      .join("\n");
+      .map((err) => `	Error on line ${err.line}: ${err.message.trim()}`)
+      .join("
+");
     this.assert(
       validationErrors.length === 0,
-      `Expected CSS not to have validation errors. The following validation errors were reported:\n${errorMessages}`,
-      `Expected CSS to have validation errors. The following validation errors were reported:\n${errorMessages}`
+      `Expected CSS not to have validation errors. The following validation errors were reported:
+${errorMessages}`,
+      `Expected CSS to have validation errors. The following validation errors were reported:
+${errorMessages}`
     );
   });
 });
