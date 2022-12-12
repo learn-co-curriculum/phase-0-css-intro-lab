@@ -23,8 +23,7 @@ chai.use(function (chai, utils) {
     const validationErrors = validate(this._obj);
     const errorMessages = validationErrors
       .map((err) => `	Error on line ${err.line}: ${err.message.trim()}`)
-      .join("
-");
+      .join("");
     this.assert(
       validationErrors.length === 0,
       `Expected CSS not to have validation errors. The following validation errors were reported:
