@@ -28,7 +28,7 @@ work on implementing CSS declarations in our HTML.
 
 ## Getting Started
 
-Fork and clone this lesson into your local environment. Navigate into its
+**Fork and clone** this lesson into your local environment. Navigate into its
 directory in the terminal, then run `code .` to open the files in Visual Studio
 Code.
 
@@ -105,7 +105,7 @@ has changed:
 - Set the elements with the class of `.perspective-questions` to a `font-style`
   of `italic`
 
-Run `learn test` to test your work.
+Run `npm test` to test your work.
 
 ## Conclusion
 
