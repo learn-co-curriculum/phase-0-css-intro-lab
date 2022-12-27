@@ -105,7 +105,8 @@ has changed:
 - Set the elements with the class of `.perspective-questions` to a `font-style`
   of `italic`
 
-Run `npm test` to test your work.
+Run `npm test` to test your work. Remember to push and submit your work using
+CodeGrade when you're done.
 
 ## Conclusion
 
